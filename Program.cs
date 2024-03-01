@@ -15,6 +15,7 @@ internal static class TextDecorator
         if (args.Length is < 2 or > 3)
         {
             Console.WriteLine("Please enter program arguments: <mode> <text>");
+            Console.WriteLine("Modes: #, alt, robber/røver or pig. Use \" \" if multiple words");
             return;
         }
 
@@ -38,7 +39,7 @@ internal static class TextDecorator
                 break;
             default:
                 Console.WriteLine(
-                    "Unknown mode. Please use #, alt or robber/røver. The program is not case-sensitive.");
+                    "Unknown mode. Please use #, alt, robber/røver or pig. The program is not case-sensitive.");
                 break;
         }
     }
